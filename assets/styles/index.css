@@ -154,7 +154,7 @@ a:hover {
 }
 
 .council-logo {
-  margin-top: 14.6rem;
+  margin-top: 14.2rem;
   width: 18.668rem;
   height: 3.289rem;
 
@@ -168,16 +168,16 @@ a:hover {
   .council-logo {
     width: 29.77rem;
     height: 5.244rem;
-    margin-top: 11.7rem;
+    margin-top: 6rem;
     margin-bottom: 0.8rem;
   }
 }
 
 .mobile-text {
-  margin-top: 4.2rem;
+  margin-top: -2.3rem;
 }
 
 .lang {
-  margin-top: 12.05rem;
+  margin-top: 6rem;
   color: #7f7f7f;
 }
