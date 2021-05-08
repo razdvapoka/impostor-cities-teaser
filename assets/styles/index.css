@@ -1,0 +1,183 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica Neue LT Pro, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  font-size: calc(10 / 1492 * 100vw);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: calc(10 / 750 * 100vw);
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  padding: 0.8rem;
+}
+@media (max-width: 750px) {
+  body {
+    padding: 1.6rem;
+  }
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #7f7f7f;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.2rem;
+  margin-right: -0.2rem;
+}
+
+.grid > * {
+  padding-left: 0.2rem;
+}
+
+.grid-col {
+  width: 25%;
+}
+
+.white-rect {
+  background-color: white;
+  width: 4.6rem;
+  height: 2.5rem;
+}
+
+@media (max-width: 750px) {
+  .white-rect {
+    width: 8.8rem;
+    height: 4.6rem;
+  }
+}
+
+.text-st1 {
+  font-size: 1.4rem;
+  line-height: calc(15 / 14);
+  letter-spacing: calc(-15em / 1000);
+}
+
+.text-st2 {
+  font-size: 3.4rem;
+  line-height: calc(35 / 34);
+  letter-spacing: calc(-23em / 1000);
+}
+
+@media (max-width: 750px) {
+  .text-st1,
+  .text-st2 {
+    font-size: 2.8rem;
+    line-height: calc(30 / 28);
+    letter-spacing: calc(-15em / 1000);
+  }
+}
+
+.top-text {
+  margin-top: 1.8rem;
+}
+
+.big-text {
+  margin-top: 7.67rem;
+}
+
+.bottom-text {
+  margin-top: 7.65rem;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 750px) {
+  .logo-box {
+    justify-content: flex-end;
+  }
+}
+
+.logo {
+  width: 14.873rem;
+  height: 13.626rem;
+  margin-top: 4.6rem;
+  margin-right: 1.3rem;
+
+  background-image: url(../svg/biennale-logo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 750px) {
+  .logo {
+    width: 21.798rem;
+    height: 20.138rem;
+    margin-top: 4.2rem;
+    margin-right: 2rem;
+  }
+}
+
+.date {
+  margin-top: 18.9rem;
+}
+
+.council-logo {
+  margin-top: 14.6rem;
+  width: 18.668rem;
+  height: 3.289rem;
+
+  background-image: url(../svg/council-logo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 750px) {
+  .council-logo {
+    width: 29.77rem;
+    height: 5.244rem;
+    margin-top: 11.7rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.mobile-text {
+  margin-top: 4.2rem;
+}
+
+.lang {
+  margin-top: 12.05rem;
+  color: #7f7f7f;
+}
